@@ -1,57 +1,19 @@
-<p align="center">
-  <picture>
-    <img alt="Ultravox" src="https://zfmrfvimiaqahezndsse.supabase.co/storage/v1/object/public/images/custom/Introducing%20Ultravox%20Wide.jpg">
-  </picture>
-</p>
 
 <h3 align="center">
 A fast multimodal LLM for real-time voice
 </h3>
 
-_Latest News_
-* 2024/08 — [Ultravox 0.4](https://github.com/fixie-ai/ultravox/releases/tag/v0.4) available
-* 2024/08 — [Ultravox 0.3](https://github.com/fixie-ai/ultravox/releases/tag/v0.3) available
-* 2024/08 — Preview of Ultravox APIs available, more information [here](https://fixie-ai.github.io/ultradox/)
 
 ---
 
 # About
 
-Ultravox is a new kind of multimodal LLM that can understand text as well as human speech, without the need for a separate Audio Speech Recognition (ASR) stage. Building on research like [AudioLM](https://arxiv.org/abs/2209.03143), [SeamlessM4T](https://ai.meta.com/blog/seamless-m4t/), [Gazelle](https://tincans.ai/slm), [SpeechGPT](https://github.com/0nutation/SpeechGPT/tree/main/speechgpt), and others, Ultravox is able to extend any open-weight LLM with a multimodal projector that converts audio directly into the high-dimensional space used by LLM. We've trained versions on Llama 3, Mistral, and Gemma. This direct coupling allows Ultravox to respond much more quickly than systems that combine separate ASR and LLM components. In the future this will also allow Ultravox to natively understand the paralinguistic cues of timing and emotion that are omnipresent in human speech.
+This is a new kind of multimodal LLM that can understand text as well as human speech, without the need for a separate Audio Speech Recognition (ASR) stage. Building on research like [AudioLM](https://arxiv.org/abs/2209.03143), [SeamlessM4T](https://ai.meta.com/blog/seamless-m4t/), [Gazelle](https://tincans.ai/slm), [SpeechGPT](https://github.com/0nutation/SpeechGPT/tree/main/speechgpt), and others, this project is able to extend any open-weight LLM with a multimodal projector that converts audio directly into the high-dimensional space used by LLM. We've trained versions on Llama 3, Mistral, and Gemma. This direct coupling allows Ultravox to respond much more quickly than systems that combine separate ASR and LLM components. In the future this will also allow this project to natively understand the paralinguistic cues of timing and emotion that are omnipresent in human speech.
 
 The current version of Ultravox (v0.4), when invoked with audio content, has a time-to-first-token (TTFT) of approximately 150ms, and a tokens-per-second rate of ~60 using a Llama 3.1 8B backbone. While quite fast, we believe there is considerable room for improvement in these numbers.
 
 Ultravox currently takes in audio and emits streaming text. As we evolve the model, we'll train it to be able to emit a stream of speech tokens that can then be converted directly into raw audio by an appropriate unit vocoder.
 
-### Demo
-
-See Ultravox in action on our [demo page](https://demo.ultravox.ai).
-
-### Discord
-
-Join us on our Discord server [here](https://discord.gg/Qw6KHxv8YB).
-
-### Jobs
-
-If you're interested in working on Ultravox fulltime, we're hiring! Check out our jobs page [here](https://careers.fixie.ai).
-
-### Inference Server
-
-You can try out Ultravox using your own audio content (as a WAV file) by spinning up an Ultravox instance on our partner, BaseTen: [https://www.baseten.co/library/ultravox/](https://www.baseten.co/library/ultravox/). They offer free credits to get started.
-
-If you're interested in running Ultravox in a real-time capacity, we offer a set of managed APIs as well. You can learn more about getting access to those [here](https://docs.ultravox.ai).
-
-### Model
-
-You can download the latest weights from the [Ultravox Hugging Face page](https://huggingface.co/fixie-ai/).
-
-### Architecture
-
-[![architecture diagram](https://raw.githubusercontent.com/fixie-ai/ultravox/main/docs/assets/Ultravox%20Model%20Architecture.svg)](https://docs.google.com/presentation/d/1ey81xuuMzrJaBwztb_Rq24Cit37GQokD2aAes_KkGVI/edit)
-
-# Contributing
-
-Read on if you're interested in training your own version of Ultravox.
 
 ## Environment Setup (Mac)
 
