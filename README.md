@@ -7,16 +7,14 @@ This section will guide you through preparing your local machine for running the
 
 ### 准备工作
 
-Before you begin, ensure you have the following installed:
+在开始之前，请确保已安装以下内容:
 
-- **Anaconda**: Download and install from [Anaconda's official site](https://www.anaconda.com/).
-- **LM Studio**: Access and information available at [LM Studio's website](https://lmstudio.ai/).
+- **Anaconda**:  [Anaconda's official site](https://www.anaconda.com/).
+- **LM Studio**: [LM Studio's website](https://lmstudio.ai/).
 
 ### 环境配置
 
-Follow these steps to prepare your environment:
-
-1. **Install Anaconda**: Follow the Anaconda installation instructions for your operating system available on the Anaconda website.
+1. Anaconda：从 Anaconda 官方网站 下载并安装
 
 2. **Create a New Conda Environment**:
    ```bash
